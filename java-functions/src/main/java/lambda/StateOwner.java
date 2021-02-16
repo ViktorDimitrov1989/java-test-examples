@@ -30,7 +30,5 @@ public class StateOwner {
     currentOps.apply(state);
     this.state = newState;
     print.accept(newState);
-//    System.out.println("Change state to: "+ newState);
   }
-
 }

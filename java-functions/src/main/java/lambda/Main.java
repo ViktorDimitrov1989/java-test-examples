@@ -17,7 +17,7 @@ public class Main {
     StateOwner stateOwner = new StateOwner(Main::defaultStateChange);
     stateOwner
         .mutate(state -> state.concat("_APX"))
-        .mutate(state -> state.toLowerCase())
+        .mutate(String::toLowerCase)
         .mutate(state -> state.split("_")[0])
         .changeState("UPDATED_STATE",
             newState -> System.out.println("|####| and the new state is: |"+newState+"|"));
