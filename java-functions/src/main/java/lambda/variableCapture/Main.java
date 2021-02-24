@@ -1,27 +1,15 @@
 package lambda.variableCapture;
 
-import java.util.Comparator;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
-  private static Integer STATIC_VAR = 9;
+  private static Integer n = 4;
 
   public static void main(String[] args) {
-    Pesho pesho = new Pesho(15);
+    //TODO: filter and print all numbers < n
+    List<Integer> numbers = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
 
-    Integer i = 1;
-    Comparator<Integer> c = (a, b) -> i.compareTo(a);
-  }
-
-  public static class Pesho{
-    private Integer age;
-
-    public Pesho(Integer age){
-      age = age;
-    }
-
-    public Integer getAge(){
-      return age;
-    }
   }
 }
